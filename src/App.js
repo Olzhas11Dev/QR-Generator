@@ -12,7 +12,6 @@ function App() {
     const [isLoggedIn, setIsLoggedIn] = React.useState(false)
     const navigate = useNavigate()
 
-
     const googleSignIn = () => {
         signInWithPopup(auth, googleProvider).then((res) => {
             if (res) {

@@ -9,7 +9,13 @@ const Main = ({user}) => {
     }
 
     return (
-        <Container sx={{width:"30%"}}>
+        <Container sx={{
+            width:{
+                sm:'90%',
+                md:"40%",
+                lg:"30%"
+            }
+           }}>
             <Box sx={{display:"flex",alignItems:'center',justifyContent:'space-between',mt:4}}>
                 <Typography variant="h6">Main Page</Typography>
                 <Box sx={{m: 2}}> {user ? displayUserName(user) : ''}</Box>

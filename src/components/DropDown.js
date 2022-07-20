@@ -53,7 +53,11 @@ export default function BasicSelect() {
                         label="Questions"
                         onChange={handleChange}
                     >
-                        {questions.map((item) => <MenuItem key={item.id}
+                        {questions.map((item) => <MenuItem sx={{fontSize:{
+                            xs:"8px",
+                            sm:'16px',
+                            lg:"16px"
+                            }}}  key={item.id}
                        value={item.question}>{item.question}</MenuItem>)}
                     </Select>
                 </FormControl>
